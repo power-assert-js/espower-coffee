@@ -3,6 +3,10 @@ espower-coffee
 
 Experimental power-assert instrumentor for CoffeeScript
 
+[![Build Status](https://travis-ci.org/twada/espower-coffee.svg?branch=master)](https://travis-ci.org/twada/espower-coffee)
+[![NPM version](https://badge.fury.io/js/espower-coffee.svg)](http://badge.fury.io/js/espower-coffee)
+[![Dependency Status](https://gemnasium.com/twada/espower-coffee.svg)](https://gemnasium.com/twada/espower-coffee)
+
 
 DESCRIPTION
 ---------------------------------------
