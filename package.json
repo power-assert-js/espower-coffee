@@ -1,0 +1,59 @@
+{
+  "name": "espower-coffee",
+  "version": "0.0.1",
+  "description": "Experimental power-assert instrumentor for CoffeeScript",
+  "keywords": [
+    "power-assert",
+    "test",
+    "assert",
+    "testing",
+    "coffee-script"
+  ],
+  "main": "./index.js",
+  "files": [
+    "README.md",
+    "index.js",
+    "guess.js",
+    "package.json",
+    "test",
+    "test_loader"
+  ],
+  "dependencies": {
+    "espower-source": "^0.7.3",
+    "minimatch": "^0.3.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "empower": "^0.7.2",
+    "expect.js": "~0.3.1",
+    "mocha": "^1.20.1",
+    "power-assert-formatter": "^0.7.1"
+  },
+  "peerDependencies": {
+    "coffee-script": "^1.7.1"
+  },
+  "scripts": {
+    "jshint": "jshint index.js guess.js",
+    "test": "./node_modules/.bin/mocha --require './guess' test/**/*.coffee && ./node_modules/.bin/mocha --require './test_loader/espower-coffee-loader' test/**/*.coffee"
+  },
+  "directories": {
+    "test": "test/tobe_instrumented"
+  },
+  "author": {
+    "name": "Takuto Wada",
+    "email": "takuto.wada@gmail.com",
+    "url": "https://github.com/twada"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/twada/espower-coffee.git"
+  },
+  "homepage": "https://github.com/twada/espower-coffee",
+  "bugs": "https://github.com/twada/espower-coffee/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://twada.mit-license.org/"
+    }
+  ]
+}

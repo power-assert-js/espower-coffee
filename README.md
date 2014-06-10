@@ -1,0 +1,178 @@
+espower-coffee
+================================
+
+Experimental power-assert instrumentor for CoffeeScript
+
+
+DESCRIPTION
+---------------------------------------
+`espower-coffee` is a Node.js module loader that instruments [power-assert](http://github.com/twada/power-assert) feature into target CoffeeScript sources on the fly.
+
+Please note that `espower-coffee` is an alpha version product. Pull-requests, issue reports and patches are always welcomed. See [power-assert](http://github.com/twada/power-assert) project for more documentation.
+
+
+EXAMPLE
+---------------------------------------
+
+Given `test/demo_test.coffee`
+
+```coffeescript
+assert = require 'power-assert'
+
+class Person
+  constructor: (name, age) ->
+    @name = name
+    @age = age
+
+describe "various types", ->
+  beforeEach ->
+    @types = [
+      "string"
+      98.6
+      true
+      false
+      null
+      `undefined`
+      [
+        "nested"
+        "array"
+      ]
+      {
+        object: true
+      }
+      NaN
+      Infinity
+      /^not/
+      new Person("alice", 3)
+    ]
+
+  it "demo", ->
+    index = @types.length - 1
+    bob = new Person("bob", 5)
+    assert @types[index].name is bob.name
+```
+
+Run mocha with `--require 'espower-coffee/guess'`
+
+```
+$ mocha --require 'espower-coffee/guess' test/demo_test.coffee
+
+  ․
+
+  0 passing (11ms)
+  1 failing
+
+  1) various types demo:
+     AssertionError: # /path/to/test/demo_test.coffee:28
+
+assert(this.types[index].name === bob.name)
+            |    ||      |    |   |   |
+            |    ||      |    |   |   "bob"
+            |    ||      |    |   Person{name:"bob",age:5}
+            |    ||      |    false
+            |    |11     "alice"
+            |    Person{name:"alice",age:3}
+            ["string",98.6,true,false,null,undefined,#Array#,#Object#,NaN,Infinity,/^not/,#Person#]
+
+--- [string] bob.name
++++ [string] this.types[index].name
+@@ -1,3 +1,5 @@
+-bob
++alice
+
+    at doPowerAssert (/path/to/node_modules/empower/lib/empower.js:100:35)
+    at /path/to/node_modules/empower/lib/empower.js:186:16
+    at powerAssert (/path/to/node_modules/empower/lib/empower.js:83:13)
+    at Context.<anonymous> (/path/to/test/demo_test.coffee:1:1)
+
+$ 
+```
+
+See the power-assert output appears!
+
+
+INSTALL
+---------------------------------------
+
+    $ npm install --save-dev espower-coffee
+
+
+HOW TO USE
+---------------------------------------
+
+
+### Zero-config mode
+
+If your tests are located on `'test/**/*.coffee'`, just run mocha with `--require 'espower-coffee/guess'`
+
+    $ mocha --require 'espower-coffee/guess' test/**/*.coffee
+
+
+### If your tests are not in test dir
+
+You can set test directory in your `package.json`
+
+```json
+{
+    "name": "your-module",
+    "description": "Your module",
+    "version": "0.0.1",
+    "directories": {
+        "test": "spec/"
+    },
+...
+}
+```
+
+Then, run mocha with `--require 'espower-coffee/guess'`
+
+    $ mocha --require 'espower-coffee/guess' spec/**/*.coffee
+
+Note: `'espower-coffee/guess'` is inspired by [intelli-espower-loader](https://github.com/azu/intelli-espower-loader)
+
+
+### More customization
+
+If you want to configure more explicitly, put `espower-coffee-loader.js` somewhere in your project.
+
+```javascript
+require('espower-coffee')({
+    // directory where match starts with
+    cwd: process.cwd(),
+
+    // glob pattern using minimatch module
+    pattern: 'spec/unit/**/*.coffee',
+
+    // options for espower module
+    espowerOptions: {
+        powerAssertVariableName: 'assert',
+        targetMethods: {
+            oneArg: [
+                'ok'
+            ],
+            twoArgs: [
+                'equal',
+                'notEqual',
+                'strictEqual',
+                'notStrictEqual',
+                'deepEqual',
+                'notDeepEqual'
+            ]
+        }
+    }
+});
+```
+
+Then, run mocha with `--require` option
+
+    $ mocha --require ./path/to/espower-coffee-loader spec/unit/some_test_using_powerassert.coffee
+
+
+AUTHOR
+---------------------------------------
+* [Takuto Wada](http://github.com/twada)
+
+
+LICENSE
+---------------------------------------
+Licensed under the [MIT](http://twada.mit-license.org/) license.
