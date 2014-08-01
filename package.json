@@ -20,13 +20,13 @@
   ],
   "dependencies": {
     "espower-source": "^0.7.3",
-    "minimatch": "^0.3.0"
+    "minimatch": "^0.4.0"
   },
   "devDependencies": {
     "coffee-script": "^1.7.1",
-    "empower": "^0.7.2",
-    "expect.js": "~0.3.1",
-    "mocha": "^1.20.1",
+    "empower": "^0.7.3",
+    "expect.js": "^0.3.1",
+    "mocha": "^1.21.3",
     "power-assert-formatter": "^0.7.1"
   },
   "peerDependencies": {
