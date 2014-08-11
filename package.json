@@ -34,7 +34,7 @@
   },
   "scripts": {
     "jshint": "jshint index.js guess.js",
-    "test": "mocha --require './guess' test/**/*.coffee && ./node_modules/.bin/mocha --require './test_loader/espower-coffee-loader' test/**/*.coffee"
+    "test": "mocha --require './guess' test/**/*.coffee && mocha --require './test_loader/espower-coffee-loader' test/**/*.coffee"
   },
   "directories": {
     "test": "test/tobe_instrumented"
