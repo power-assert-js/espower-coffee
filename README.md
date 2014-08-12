@@ -6,6 +6,7 @@ Experimental power-assert instrumentor for CoffeeScript
 [![Build Status](https://travis-ci.org/twada/espower-coffee.svg?branch=master)](https://travis-ci.org/twada/espower-coffee)
 [![NPM version](https://badge.fury.io/js/espower-coffee.svg)](http://badge.fury.io/js/espower-coffee)
 [![Dependency Status](https://gemnasium.com/twada/espower-coffee.svg)](https://gemnasium.com/twada/espower-coffee)
+[![License](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://twada.mit-license.org/)
 
 
 DESCRIPTION
