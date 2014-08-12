@@ -11,6 +11,7 @@
   ],
   "main": "./index.js",
   "files": [
+    "CHANGELOG.md",
     "README.md",
     "index.js",
     "guess.js",

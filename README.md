@@ -169,6 +169,11 @@ Then, run mocha with `--require` option
     $ mocha --require ./path/to/espower-coffee-loader spec/unit/some_test_using_powerassert.coffee
 
 
+CHANGELOG
+---------------------------------------
+See [CHANGELOG](https://github.com/twada/espower-coffee/blob/master/CHANGELOG.md)
+
+
 AUTHOR
 ---------------------------------------
 * [Takuto Wada](http://github.com/twada)
