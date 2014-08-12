@@ -1,6 +1,6 @@
 {
   "name": "espower-coffee",
-  "version": "0.1.0",
+  "version": "0.8.0",
   "description": "Experimental power-assert instrumentor for CoffeeScript",
   "keywords": [
     "power-assert",
