@@ -19,15 +19,15 @@
     "test_loader"
   ],
   "dependencies": {
-    "espower-source": "^0.7.3",
+    "espower-source": "^0.8.0",
     "minimatch": "^1.0.0"
   },
   "devDependencies": {
     "coffee-script": "^1.7.1",
-    "empower": "^0.7.3",
+    "empower": "^0.8.0",
     "expect.js": "^0.3.1",
     "mocha": "^1.21.4",
-    "power-assert-formatter": "^0.7.1"
+    "power-assert-formatter": "^0.8.0"
   },
   "peerDependencies": {
     "coffee-script": "^1.7.1"
