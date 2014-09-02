@@ -64,11 +64,11 @@ $ mocha --require 'espower-coffee/guess' test/demo_test.coffee
 
   ․
 
-  0 passing (11ms)
+  0 passing (15ms)
   1 failing
 
   1) various types demo:
-     AssertionError: # /path/to/test/demo_test.coffee:28
+     AssertionError: # /path/to/test/demo_test.coffee:33
 
 assert(this.types[index].name === bob.name)
             |    ||      |    |   |   |
@@ -85,9 +85,9 @@ assert(this.types[index].name === bob.name)
 -bob
 +alice
 
-    at doPowerAssert (/path/to/node_modules/empower/lib/empower.js:100:35)
-    at /path/to/node_modules/empower/lib/empower.js:186:16
-    at powerAssert (/path/to/node_modules/empower/lib/empower.js:83:13)
+    at Decorator.concreteAssert (/path/to/node_modules/power-assert/node_modules/empower/lib/decorator.js:63:21)
+    at /path/to/node_modules/power-assert/node_modules/empower/lib/decorate.js:44:26
+    at powerAssert (/path/to/node_modules/power-assert/node_modules/empower/index.js:57:32)
     at Context.<anonymous> (/path/to/test/demo_test.coffee:1:1)
 
 $ 
