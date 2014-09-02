@@ -1,3 +1,11 @@
+## 0.9.0 (2014-09-02)
+
+
+#### Features
+
+* **espower-coffee:** interact with coffeescript compiler to adjust line number in power-assert output ([9c159205](https://github.com/twada/espower-coffee/commit/9c159205608e6a556f61167d1fb65123ae2421ab))
+
+
 ## 0.8.0 (2014-08-12)
 
 
