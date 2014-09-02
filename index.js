@@ -19,17 +19,18 @@ function espowerCoffee (options) {
         pattern = options.cwd + separator + options.pattern;
 
     coffee._compileFile = function (filepath, sourceMap) {
-        var withMap = originalCompileFile(filepath, true); // enable sourcemaps
-        if (minimatch(filepath, pattern)){
-            var conv = convert.fromJSON(withMap.v3SourceMap);
-            // restore filepath since coffeescript compiler drops it
-            conv.setProperty('sources', [filepath]);
-            withMap.js = espowerSource(
-                withMap.js,
-                filepath,
-                extend(options.espowerOptions, {sourceMap: conv.toObject()})
-            );
+        if (! minimatch(filepath, pattern)) {
+            return originalCompileFile(filepath, sourceMap);
         }
+        var withMap = originalCompileFile(filepath, true); // enable sourcemaps
+        var conv = convert.fromJSON(withMap.v3SourceMap);
+        // restore filepath since coffeescript compiler drops it
+        conv.setProperty('sources', [filepath]);
+        withMap.js = espowerSource(
+            withMap.js,
+            filepath,
+            extend(options.espowerOptions, {sourceMap: conv.toObject()})
+        );
         return sourceMap ? withMap : withMap.js;
     };
 
