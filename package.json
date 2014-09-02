@@ -1,6 +1,6 @@
 {
   "name": "espower-coffee",
-  "description": "Experimental power-assert instrumentor for CoffeeScript",
+  "description": "power-assert instrumentor for CoffeeScript",
   "version": "0.8.0",
   "author": {
     "name": "Takuto Wada",
