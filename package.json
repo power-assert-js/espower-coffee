@@ -19,7 +19,7 @@
     "empower": "^0.9.0",
     "expect.js": "^0.3.1",
     "mocha": "^1.21.4",
-    "power-assert-formatter": "^0.8.0"
+    "power-assert-formatter": "^0.9.0"
   },
   "directories": {
     "test": "test/tobe_instrumented"
