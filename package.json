@@ -36,8 +36,9 @@
   "homepage": "https://github.com/twada/espower-coffee",
   "keywords": [
     "power-assert",
-    "test",
     "assert",
+    "assertion",
+    "test",
     "testing",
     "coffee-script"
   ],
