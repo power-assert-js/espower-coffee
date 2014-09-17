@@ -1,3 +1,11 @@
+### 0.9.1 (2014-09-17)
+
+
+#### Features
+
+* **espower-coffee:** update espower-source to 0.9.1 ([c84cf698](https://github.com/twada/espower-coffee/commit/c84cf698cf4ddff7a74c3f1677a2fdb3a4aa00d1))
+
+
 ## 0.9.0 (2014-09-02)
 
 
