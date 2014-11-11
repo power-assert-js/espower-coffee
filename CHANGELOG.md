@@ -1,3 +1,12 @@
+## [0.10.0](https://github.com/twada/espower-coffee/releases/tag/v0.10.0) (2014-11-11)
+
+
+#### Features
+
+* **espower-coffee:**
+  * update espower-source to 0.10.0 ([48f6d5fd](https://github.com/twada/espower-coffee/commit/48f6d5fd375d86add888dcf34016cefd8585c120))
+
+
 ### 0.9.1 (2014-09-17)
 
 
