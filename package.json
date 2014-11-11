@@ -55,7 +55,7 @@
     "url": "git://github.com/twada/espower-coffee.git"
   },
   "scripts": {
-    "jshint": "jshint index.js guess.js",
+    "lint": "jshint index.js guess.js",
     "test": "mocha --require './guess' test/**/*.coffee && mocha --require './test_loader/espower-coffee-loader' test/**/*.coffee"
   }
 }
