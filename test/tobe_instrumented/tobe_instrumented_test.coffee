@@ -22,17 +22,17 @@ describe "power-assert message", ->
     @expectPowerAssertMessage (->
       assert (three * (seven * ten)) is three
     ), [
-      "assert(three * (seven * ten) === three)"
-      "       |     |  |     | |    |   |     "
-      "       |     |  |     | |    |   3     "
-      "       |     |  |     | 10   false     "
-      "       |     |  7     70               "
-      "       3     210                       "
-      ""
-      "[number] three"
-      "=> 3"
-      "[number] three * (seven * ten)"
-      "=> 210"
+      "  assert(three * (seven * ten) === three)"
+      "         |     |  |     | |    |   |     "
+      "         |     |  |     | |    |   3     "
+      "         |     |  |     | 10   false     "
+      "         |     |  7     70               "
+      "         3     210                       "
+      "  "
+      "  [number] three"
+      "  => 3"
+      "  [number] three * (seven * ten)"
+      "  => 210"
     ]
 
   it "equal with Literal and Identifier: assert.equal(1, minusOne);", ->
@@ -40,7 +40,7 @@ describe "power-assert message", ->
     @expectPowerAssertMessage (->
       assert.equal 1, minusOne
     ), [
-      "assert.equal(1, minusOne)"
-      "                |        "
-      "                -1       "
+      "  assert.equal(1, minusOne)"
+      "                  |        "
+      "                  -1       "
     ]
