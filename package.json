@@ -20,7 +20,7 @@
     "expect.js": "^0.3.1",
     "jshint": "^2.5.10",
     "mocha": "^2.0.1",
-    "power-assert-formatter": "^0.10.0"
+    "power-assert-formatter": "^0.10.1"
   },
   "directories": {
     "test": "test/tobe_instrumented"
