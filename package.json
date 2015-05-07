@@ -57,6 +57,8 @@
   },
   "scripts": {
     "lint": "jshint index.js guess.js",
-    "test": "mocha --require './guess' test/**/*.coffee && mocha --require './test_loader/espower-coffee-loader' test/**/*.coffee"
+    "guess": "mocha --require './guess' test/**/*.coffee",
+    "custom": "mocha --require './test_loader/espower-coffee-loader' test/**/*.coffee",
+    "test": "npm run guess && npm run custom"
   }
 }
