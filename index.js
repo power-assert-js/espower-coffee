@@ -5,18 +5,19 @@
  * Licensed under the MIT license.
  *   http://twada.mit-license.org/
  */
-var coffee = require('coffee-script'),
-    originalCompileFile = coffee._compileFile,
-    minimatch = require('minimatch'),
-    extend = require('xtend'),
-    convert = require('convert-source-map'),
-    espowerSource = require('espower-source');
+var coffee = require('coffee-script');
+var originalCompileFile = coffee._compileFile;
+var minimatch = require('minimatch');
+var extend = require('xtend');
+var convert = require('convert-source-map');
+var espowerSource = require('espower-source');
 
 function espowerCoffee (options) {
     'use strict';
 
-    var separator = (options.pattern.lastIndexOf('/', 0) === 0) ? '' : '/',
-        pattern = options.cwd + separator + options.pattern;
+    var patternStartsWithSlash = (options.pattern.lastIndexOf('/', 0) === 0);
+    var separator = patternStartsWithSlash ? '' : '/';
+    var pattern = options.cwd + separator + options.pattern;
 
     coffee._compileFile = function (filepath, sourceMap) {
         if (! minimatch(filepath, pattern)) {

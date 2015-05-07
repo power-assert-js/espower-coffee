@@ -5,10 +5,10 @@
  * Licensed under the MIT license.
  *   http://twada.mit-license.org/
  */
-var path = require('path'),
-    pattern = 'test/**/*.coffee',
-    packageData,
-    testDir;
+var path = require('path');
+var pattern = 'test/**/*.coffee';
+var packageData;
+var testDir;
 packageData = require(path.join(process.cwd(), 'package.json'));
 if (packageData &&
     typeof packageData.directories === 'object' &&
