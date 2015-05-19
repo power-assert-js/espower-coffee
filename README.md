@@ -3,17 +3,17 @@ espower-coffee
 
 power-assert instrumentor for CoffeeScript
 
-[![Build Status](https://travis-ci.org/twada/espower-coffee.svg?branch=master)](https://travis-ci.org/twada/espower-coffee)
+[![Build Status](https://travis-ci.org/power-assert-js/espower-coffee.svg?branch=master)](https://travis-ci.org/power-assert-js/espower-coffee)
 [![NPM version](https://badge.fury.io/js/espower-coffee.svg)](http://badge.fury.io/js/espower-coffee)
-[![Dependency Status](https://gemnasium.com/twada/espower-coffee.svg)](https://gemnasium.com/twada/espower-coffee)
+[![Dependency Status](https://gemnasium.com/power-assert-js/espower-coffee.svg)](https://gemnasium.com/power-assert-js/espower-coffee)
 [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://twada.mit-license.org/)
 
 
 DESCRIPTION
 ---------------------------------------
-`espower-coffee` is a Node.js module loader that instruments [power-assert](http://github.com/twada/power-assert) feature into target CoffeeScript sources on the fly.
+`espower-coffee` is a Node.js module loader that instruments [power-assert](http://github.com/power-assert-js/power-assert) feature into target CoffeeScript sources on the fly.
 
-Please note that `espower-coffee` is a beta version product. Pull-requests, issue reports and patches are always welcomed. See [power-assert](http://github.com/twada/power-assert) project for more documentation.
+Please note that `espower-coffee` is a beta version product. Pull-requests, issue reports and patches are always welcomed. See [power-assert](http://github.com/power-assert-js/power-assert) project for more documentation.
 
 
 EXAMPLE
@@ -171,7 +171,7 @@ Then, run mocha with `--require` option
 
 CHANGELOG
 ---------------------------------------
-See [CHANGELOG](https://github.com/twada/espower-coffee/blob/master/CHANGELOG.md)
+See [CHANGELOG](https://github.com/power-assert-js/espower-coffee/blob/master/CHANGELOG.md)
 
 
 AUTHOR
