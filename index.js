@@ -30,7 +30,7 @@ function espowerCoffee (options) {
         withMap.js = espowerSource(
             withMap.js,
             filepath,
-            extend(options.espowerOptions, {sourceMap: conv.toObject()})
+            extend(options.espowerOptions, { sourceMap: conv.toObject(), sourceRoot: options.cwd })
         );
         return sourceMap ? withMap : withMap.js;
     };
