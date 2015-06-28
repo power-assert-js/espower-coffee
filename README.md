@@ -13,7 +13,7 @@ DESCRIPTION
 ---------------------------------------
 `espower-coffee` is a Node.js module loader that instruments [power-assert](http://github.com/power-assert-js/power-assert) feature into target CoffeeScript sources on the fly.
 
-Please note that `espower-coffee` is a beta version product. Pull-requests, issue reports and patches are always welcomed. See [power-assert](http://github.com/power-assert-js/power-assert) project for more documentation.
+Pull-requests, issue reports and patches are always welcomed. See [power-assert](http://github.com/power-assert-js/power-assert) project for more documentation.
 
 
 EXAMPLE
