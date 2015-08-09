@@ -10,7 +10,7 @@
   "bugs": "https://github.com/power-assert-js/espower-coffee/issues",
   "dependencies": {
     "convert-source-map": "^1.1.0",
-    "espower-source": "git://github.com/power-assert-js/espower-source.git",
+    "espower-source": "^1.0.0",
     "minimatch": "^2.0.1",
     "xtend": "^4.0.0"
   },
