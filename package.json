@@ -43,10 +43,7 @@
     "testing",
     "coffee-script"
   ],
-  "license": {
-    "type": "MIT",
-    "url": "http://twada.mit-license.org/"
-  },
+  "license": "MIT",
   "main": "./index.js",
   "peerDependencies": {
     "coffee-script": "^1.7.1"
