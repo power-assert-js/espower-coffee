@@ -1,3 +1,12 @@
+## [1.0.0](https://github.com/power-assert-js/espower-coffee/releases/tag/v1.0.0) (2015-08-22)
+
+
+#### Features
+
+  * transfer to power-assert-js organization ([5227edb8](https://github.com/power-assert-js/espower-coffee/commit/5227edb88f18f8ebaf014fb2ffc094e4771f6336))
+  * [use options.cwd for default sourceRoot](https://github.com/power-assert-js/espower-coffee/pull/2)
+
+
 ## [0.10.0](https://github.com/power-assert-js/espower-coffee/releases/tag/v0.10.0) (2014-11-11)
 
 
