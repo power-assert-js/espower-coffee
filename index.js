@@ -1,7 +1,7 @@
 /**
  * espower-coffee - power-assert instrumentor for CoffeeScript
  *
- * Copyright (c) 2014 Takuto Wada
+ * Copyright (c) 2014-2015 Takuto Wada
  * Licensed under the MIT license.
  *   http://twada.mit-license.org/
  */
