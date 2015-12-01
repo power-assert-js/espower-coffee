@@ -6,12 +6,12 @@ power-assert instrumentor for CoffeeScript
 [![Build Status](https://travis-ci.org/power-assert-js/espower-coffee.svg?branch=master)](https://travis-ci.org/power-assert-js/espower-coffee)
 [![NPM version](https://badge.fury.io/js/espower-coffee.svg)](http://badge.fury.io/js/espower-coffee)
 [![Dependency Status](https://gemnasium.com/power-assert-js/espower-coffee.svg)](https://gemnasium.com/power-assert-js/espower-coffee)
-[![License](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://twada.mit-license.org/)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](http://twada.mit-license.org/)
 
 
 DESCRIPTION
 ---------------------------------------
-`espower-coffee` is a Node.js module loader that instruments [power-assert](http://github.com/power-assert-js/power-assert) feature into target CoffeeScript sources on the fly.
+`espower-coffee` is a Node.js module loader that instruments [power-assert](https://github.com/power-assert-js/power-assert) feature into target CoffeeScript sources on the fly.
 
 Pull-requests, issue reports and patches are always welcomed. See [power-assert](http://github.com/power-assert-js/power-assert) project for more documentation.
 
@@ -133,7 +133,7 @@ Then, run mocha with `--require 'espower-coffee/guess'`
 
     $ mocha --require 'espower-coffee/guess' spec/**/*.coffee
 
-Note: `'espower-coffee/guess'` is inspired by [intelli-espower-loader](https://github.com/azu/intelli-espower-loader)
+Note: `'espower-coffee/guess'` is inspired by [intelli-espower-loader](https://github.com/power-assert-js/intelli-espower-loader)
 
 
 ### More customization
@@ -178,7 +178,7 @@ See [CHANGELOG](https://github.com/power-assert-js/espower-coffee/blob/master/CH
 
 AUTHOR
 ---------------------------------------
-* [Takuto Wada](http://github.com/twada)
+* [Takuto Wada](https://github.com/twada)
 
 
 LICENSE
