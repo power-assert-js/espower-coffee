@@ -18,7 +18,7 @@
     "coffee-script": "^1.7.1",
     "empower": "^0.10.0",
     "expect.js": "^0.3.1",
-    "jshint": "^2.5.11",
+    "jshint": "~2.8.0",
     "mocha": "^2.1.0",
     "power-assert-formatter": "^0.10.1"
   },
