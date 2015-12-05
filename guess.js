@@ -14,7 +14,9 @@ if (packageData &&
     typeof packageData.directories === 'object' &&
     typeof packageData.directories.test === 'string') {
     testDir = packageData.directories.test;
-    pattern = testDir + ((testDir.lastIndexOf('/', 0) === 0) ? '' : '/') + '**/*.coffee';
+    var testDirEndsWithSlash = (testDir.lastIndexOf('/') === (testDir.length - 1));
+    var sep = testDirEndsWithSlash ? '' : '/';
+    pattern = testDir + sep + '**/*.coffee';
 }
 require('./index')({
     cwd: process.cwd(),
