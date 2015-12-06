@@ -3,7 +3,8 @@ sudo: false
 node_js:
   - "0.10"
   - "0.12"
-  - "io.js"
+  - "4.2"
+  - "stable"
 script:
   - "npm run lint"
   - "npm test"
