@@ -1,3 +1,11 @@
+### [1.0.1](https://github.com/power-assert-js/espower-coffee/releases/tag/v1.0.1) (2015-12-06)
+
+
+#### Bug Fixes
+
+* fix trailing slash detection ([26552e56](https://github.com/power-assert-js/espower-coffee/commit/26552e5659505ccf8f42504b905bdd64e9882cf5))
+
+
 ## [1.0.0](https://github.com/power-assert-js/espower-coffee/releases/tag/v1.0.0) (2015-08-22)
 
 
