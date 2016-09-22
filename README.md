@@ -183,4 +183,4 @@ AUTHOR
 
 LICENSE
 ---------------------------------------
-Licensed under the [MIT](http://twada.mit-license.org/) license.
+Licensed under the [MIT](http://twada.mit-license.org/2014-2016) license.
