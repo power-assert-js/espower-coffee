@@ -3,10 +3,10 @@ espower-coffee
 
 power-assert instrumentor for CoffeeScript
 
-[![Build Status](https://travis-ci.org/power-assert-js/espower-coffee.svg?branch=master)](https://travis-ci.org/power-assert-js/espower-coffee)
-[![NPM version](https://badge.fury.io/js/espower-coffee.svg)](http://badge.fury.io/js/espower-coffee)
-[![Dependency Status](https://gemnasium.com/power-assert-js/espower-coffee.svg)](https://gemnasium.com/power-assert-js/espower-coffee)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](http://twada.mit-license.org/)
+[![Build Status][travis-image]][travis-url]
+[![NPM version][npm-image]][npm-url]
+[![Dependency Status][depstat-image]][depstat-url]
+[![License][license-image]][license-url]
 
 
 DESCRIPTION
@@ -184,3 +184,16 @@ AUTHOR
 LICENSE
 ---------------------------------------
 Licensed under the [MIT](http://twada.mit-license.org/2014-2016) license.
+
+
+[npm-url]: https://npmjs.org/package/espower-coffee
+[npm-image]: https://badge.fury.io/js/espower-coffee.svg
+
+[travis-url]: https://travis-ci.org/power-assert-js/espower-coffee
+[travis-image]: https://secure.travis-ci.org/power-assert-js/espower-coffee.svg?branch=master
+
+[depstat-url]: https://gemnasium.com/power-assert-js/espower-coffee
+[depstat-image]: https://gemnasium.com/power-assert-js/espower-coffee.svg
+
+[license-url]: http://twada.mit-license.org/2014-2016
+[license-image]: https://img.shields.io/badge/license-MIT-brightgreen.svg
