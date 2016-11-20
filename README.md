@@ -171,6 +171,16 @@ Then, run mocha with `--require` option
     $ mocha --require ./path/to/espower-coffee-loader spec/unit/some_test_using_powerassert.coffee
 
 
+OUR SUPPORT POLICY
+---------------------------------------
+
+We support Node under maintenance. In other words, we stop supporting old Node version when [their maintenance ends](https://github.com/nodejs/LTS).
+
+This means that any other environment is not supported.
+
+NOTE: If espower-cli works in any of the unsupported environments, it is purely coincidental and has no bearing on future compatibility. Use at your own risk.
+
+
 CHANGELOG
 ---------------------------------------
 See [CHANGELOG](https://github.com/power-assert-js/espower-coffee/blob/master/CHANGELOG.md)
