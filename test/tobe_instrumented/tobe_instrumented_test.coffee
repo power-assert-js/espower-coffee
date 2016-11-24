@@ -1,6 +1,4 @@
-empower = require("empower")
-formatter = require("power-assert-formatter")()
-assert = empower(require("assert"), formatter)
+assert = require("assert")
 expect = require("expect.js")
 
 describe "power-assert message", ->
@@ -25,7 +23,7 @@ describe "power-assert message", ->
       "  => 3"
       "  [number] three * (seven * ten)"
       "  => 210"
-    ], "  # test/tobe_instrumented/tobe_instrumented_test.coffee:15"
+    ], "  # test/tobe_instrumented/tobe_instrumented_test.coffee:13"
 
   it "equal with Literal and Identifier: assert.equal(1, minusOne);", ->
     minusOne = -1
@@ -35,7 +33,7 @@ describe "power-assert message", ->
       "  assert.equal(1, minusOne)"
       "                  |        "
       "                  -1       "
-    ], "  # test/tobe_instrumented/tobe_instrumented_test.coffee:33"
+    ], "  # test/tobe_instrumented/tobe_instrumented_test.coffee:31"
 
   beforeEach ->
     @expectPowerAssertMessage = (body, expectedDiagram, expectedLine) ->

@@ -10,17 +10,16 @@
   "bugs": "https://github.com/power-assert-js/espower-coffee/issues",
   "dependencies": {
     "convert-source-map": "^1.1.0",
-    "espower-source": "^1.0.0",
+    "espower-source": "^2.0.0",
     "minimatch": "^3.0.0",
     "xtend": "^4.0.0"
   },
   "devDependencies": {
     "coffee-script": "^1.7.1",
-    "empower": "^1.0.0",
     "expect.js": "^0.3.1",
     "jshint": "^2.8.0",
     "mocha": "^3.0.0",
-    "power-assert-formatter": "^1.0.0"
+    "power-assert": "^1.4.2"
   },
   "directories": {
     "test": "test/tobe_instrumented"
