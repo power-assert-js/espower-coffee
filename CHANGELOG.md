@@ -1,3 +1,11 @@
+## [1.1.0](https://github.com/power-assert-js/espower-coffee/releases/tag/v1.1.0) (2016-11-24)
+
+
+#### Features
+
+  * [Enable transparent assertion enhancement, embed value capturing helper into transpiled code (by upgrading espower-source to 2.0.0)](https://github.com/power-assert-js/espower-coffee/pull/4)
+
+
 ### [1.0.1](https://github.com/power-assert-js/espower-coffee/releases/tag/v1.0.1) (2015-12-06)
 
 
