@@ -22,7 +22,7 @@ EXAMPLE
 Given `test/demo_test.coffee`
 
 ```coffeescript
-assert = require 'power-assert'
+assert = require 'assert'
 
 class Person
   constructor: (name, age) ->
@@ -99,7 +99,7 @@ See the power-assert output appears!
 INSTALL
 ---------------------------------------
 
-    $ npm install --save-dev espower-coffee
+    $ npm install --save-dev espower-coffee power-assert
 
 
 HOW TO USE
@@ -146,7 +146,7 @@ require('espower-coffee')({
     cwd: process.cwd(),
 
     // glob pattern using minimatch module
-    pattern: 'spec/unit/**/*.coffee',
+    pattern: '{src,test}/**/*.coffee',
 
     // options for espower module
     espowerOptions: {
@@ -168,7 +168,7 @@ require('espower-coffee')({
 
 Then, run mocha with `--require` option
 
-    $ mocha --require ./path/to/espower-coffee-loader spec/unit/some_test_using_powerassert.coffee
+    $ mocha --require ./path/to/espower-coffee-loader spec/unit/some_test.coffee
 
 
 OUR SUPPORT POLICY
@@ -178,7 +178,7 @@ We support Node under maintenance. In other words, we stop supporting old Node v
 
 This means that any other environment is not supported.
 
-NOTE: If espower-cli works in any of the unsupported environments, it is purely coincidental and has no bearing on future compatibility. Use at your own risk.
+NOTE: If espower-coffee works in any of the unsupported environments, it is purely coincidental and has no bearing on future compatibility. Use at your own risk.
 
 
 CHANGELOG
