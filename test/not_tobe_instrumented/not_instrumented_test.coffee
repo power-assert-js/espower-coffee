@@ -1,6 +1,4 @@
-empower = require("empower")
-formatter = require("power-assert-formatter")()
-assert = empower(require("assert"), formatter)
+assert = require("assert")
 expect = require("expect.js")
 
 describe "power-assert client should work with not-instrumented code", ->
